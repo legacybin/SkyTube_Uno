@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="downloads">İndirmeler</string>
+    <string name="download_video">Video İndir</string>
+    <string name="starting_video_download">İndiriliyor \'%s\'…</string>
+    <string name="video_download_stream_error">\'%s\' indirilemedi.</string>
+    <string name="delete_download">İndirmeyi Sil</string>
+    <string name="video_downloaded">\'%s\' indirildi.</string>
+    <string name="no_downloaded_videos_text">Burada bulmak için birkaç video indirin.</string>
+    <string name="playing_video_file_missing">İndirilebilir dosya bulunamadığından video uzaktan oynatılıyor.</string>
+    <string name="external_storage_not_available">Dosyayı indirmek için önce harici erişim izni verin.</string>
+    <string name="download">İndir</string>
+    <string name="video_stream_not_found_with_request_resolution">İstenen %1$s-%2$s çözünürlükte herhangi bir video akışı bulunamadı</string>
+    <string name="warning_metered_network_download">Bağlı olduğunuz kotalı ağda video indirilsin mi\?</string>
+    <string name="unable_to_delete_file">İndirilen \'%s\' dosyası silinemedi.</string>
+    <string name="download_failed_because">%1$s indirilemedi çünkü %2$s.</string>
+</resources>

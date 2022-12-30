@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="subscriptions">Subscripciones</string>
+    <string name="subscribe">Subscribirse</string>
+    <string name="unsubscribe">Desubscribirse</string>
+    <string name="total_subscribers">%,d subscriptores</string>
+    <string name="subscribed">Subscrito</string>
+    <string name="unsubscribed">Desubscrito</string>
+    <string name="error_get_subbed_channels">No se puede recuperar los canales subscritos.</string>
+    <string name="error_check_if_user_has_subbed">No se puede comprobar si estás subscrito al canal (id=%s)</string>
+    <string name="error_unable_to_subscribe">No se pudo desubscribir al canal (id=%s)</string>
+    <string name="import_subscriptions">Importar subscripciones</string>
+    <string name="import_subscriptions_description">Deseleccione todo en https://takeout.google.com excepto \"YouTube y YouTube Music\" y haga clic en el botón \"Se han incluido todos los datos de Youtube\" para importar sólo las subscripciones. Haga click en \"Siguiente\"y después en \"Crear exportación\". Haz click para recibir un email con un enlace de descarga. Descarga el archivo desde tu cliente de email y extraeló. Importa subscriptions.json de el (se encuentra en /Takeout/YouTube y YouTube Music/subscriptions/). Entonces, selecciona el fichero exportado haciendo click en \"Selecciona fichero de subscripciones\" de más abajo.</string>
+    <string name="subscriptions_to_channels_imported">Importados %d canal(es).</string>
+    <string name="select_all">Seleccionar todo</string>
+    <string name="select_none">Quitar selección</string>
+    <string name="no_channels_found">No encontramos canales en el archivo que ha subido.</string>
+    <string name="no_new_channels_found">No se encontraron canales de YouTube a los que estés subscrito.</string>
+    <string name="import_subscriptions_parse_error">No se puede analizar el archivo que ha subido: %s.</string>
+    <string name="failed_to_import_subscriptions">No se pueden importar sus subscripciones de YouTube.</string>
+    <string name="about">Acerca de</string>
+    <string name="unsubscribe_from_all_current_sibbed_channels">Desubscribir de todos los canales subscritos actualmente .</string>
+    <string name="channel_subscribe_failed">No se pudo subscribir al canal</string>
+    <string name="channel_already_subscribed">Subscrito ya</string>
+    <string name="channel_subscribed">Subscrito al canal</string>
+    <string name="channel_unsubscribed">No subscrito al canal</string>
+    <string name="select_sub_file">Selecciona fichero de subscripción</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<!-- NOTE: Any changes made to this menu file should also be made to the Extra variant version.
+			The Extra variant version includes the Cast icon for casting to a Chromecast. -->
+
+	<item
+		android:id="@+id/menu_reload_video"
+		android:title="@string/reload_video"
+		android:icon="@drawable/ic_menu_reload_video"
+		app:showAsAction="ifRoom" />
+
+	<item android:id="@+id/menu_open_video_with"
+		  android:title="@string/open_with"
+		  app:showAsAction="never"/>
+
+	<item android:id="@+id/share"
+	      android:title="@string/share_via"
+	      app:showAsAction="never"/>
+
+	<item android:id="@+id/copyurl"
+	      android:title="@string/copy_url"
+	      app:showAsAction="never"/>
+
+	<item android:id="@+id/bookmark_video"
+	      android:title="@string/bookmark"
+	      app:showAsAction="never"/>
+
+	<item android:id="@+id/unbookmark_video"
+	      android:title="@string/unbookmark"
+	      app:showAsAction="never"/>
+
+	<item android:id="@+id/download_video"
+	      android:title="@string/download"
+	      app:showAsAction="never"/>
+
+	<item android:id="@+id/view_thumbnail"
+	      android:title="@string/view_thumbnail"
+	      app:showAsAction="never"/>
+
+	<item android:id="@+id/block_channel"
+		android:title="@string/block_channel"
+		app:showAsAction="never"/>
+
+	<item
+		android:id="@+id/disable_gestures"
+		android:checkable="true"
+		android:title="@string/pref_title_disable_screen_gestures"
+		app:showAsAction="never" />
+
+	<item
+		android:id="@+id/video_repeat_toggle"
+		android:checkable="true"
+		android:title="@string/pref_video_continuous_repeat_toggle"
+		app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:custom="http://schemas.android.com/tools"
+	android:fitsSystemWindows="true">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_scrollFlags="scroll|enterAlways">
+
+			<!-- BANNER IMAGE -->
+			<ImageView
+				android:id="@+id/playlist_banner_image_view"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:adjustViewBounds="true"
+				android:scaleType="fitXY"
+				android:src="@drawable/banner_default"
+				app:tint="#14000000"
+				custom:defaultImage="@drawable/banner_default" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<!-- TOOLBAR / ACTIONBAR -->
+				<androidx.appcompat.widget.Toolbar
+					android:id="@+id/toolbar"
+					android:layout_width="match_parent"
+					android:layout_height="?attr/actionBarSize"
+					android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<!-- PLAYLIST THUMBNAIL -->
+					<ImageView
+						android:id="@+id/playlist_thumbnail_image_view"
+						android:layout_width="97dp"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:adjustViewBounds="true"
+						android:padding="16dp"
+						android:scaleType="fitXY"
+						android:src="@drawable/channel_thumbnail_default"/>
+
+					<!-- PLAYLIST TITLE -->
+					<TextView
+						android:id="@+id/playlist_title_text_view"
+						style="@style/PlaylistTitleTextView"
+						android:layout_centerVertical="true"
+						android:layout_toEndOf="@+id/playlist_thumbnail_image_view"
+						android:layout_toRightOf="@+id/playlist_thumbnail_image_view"
+						android:gravity="center_vertical"
+						android:text="Playlist Title"
+						app:drawableLeftCompat="@drawable/ic_playlists"
+						app:drawableStartCompat="@drawable/ic_playlists" />
+
+				</RelativeLayout>
+
+			</LinearLayout>
+		</FrameLayout>
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<include
+		android:id="@+id/videos_gridview"
+		layout="@layout/videos_gridview"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

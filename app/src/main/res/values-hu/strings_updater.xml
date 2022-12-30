@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_available">Új verzió érhető el</string>
+    <string name="update_dialog_msg">A SkyTube új verziója érhető el. A(z) %s verzió lesz telepítve.</string>
+    <string name="up_to_date">Naprakész</string>
+    <string name="up_to_date_msg">A SkyTube legújabb verziója telepítve van.</string>
+    <string name="release_notes">Újdonságok a(z) %s verzióban</string>
+    <string name="update">Frissítés</string>
+    <string name="later">Később</string>
+    <string name="update_failure">Nem sikerült telepíteni az alkalmazás új verzióját.</string>
+    <string name="downloading">Letöltés…</string>
+</resources>

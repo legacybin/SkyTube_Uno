@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:showIn="@layout/activity_main">
+
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<!-- Scrolling content -->
+
+		<!-- FRAGMENTS will be placed here ... -->
+		<androidx.viewpager.widget.ViewPager
+			android:id="@+id/pager"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+
+	</androidx.core.widget.NestedScrollView>
+
+
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_scrollFlags="scroll|enterAlways">
+
+			<!-- BANNER IMAGE -->
+			<ImageView
+				android:id="@+id/channel_banner_image_view"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:scaleType="fitXY"
+				android:src="@drawable/banner_default"
+				android:tint="#14000000" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<!-- TOOLBAR / ACTIONBAR -->
+				<androidx.appcompat.widget.Toolbar
+					android:id="@+id/toolbar"
+					android:layout_width="match_parent"
+					android:layout_height="?attr/actionBarSize"
+					android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<!-- CHANNEL THUMBNAIL -->
+					<ImageView
+						android:id="@+id/channel_thumbnail_image_view"
+						android:layout_width="97dp"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:adjustViewBounds="true"
+						android:padding="16dp"
+						android:scaleType="fitXY"
+						android:src="@drawable/channel_thumbnail_default"/>
+
+					<!-- NUMBER OF SUBSCRIBERS -->
+					<TextView
+						android:id="@+id/channel_subs_text_view"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/channel_thumbnail_image_view"
+						android:padding="10dp"
+						android:text="@string/loading"
+						style="@style/ChannelSubsTextView"/>
+
+					<!-- SUBSCRIBE BUTTON -->
+					<free.rm.skytube.gui.businessobjects.views.SubscribeButton
+						android:id="@+id/channel_subscribe_button"
+						style="@style/SubscribeButton"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_margin="16dp"/>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+		</FrameLayout>
+
+
+		<com.google.android.material.tabs.TabLayout
+			android:id="@+id/tab_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="?attr/colorPrimary"
+			android:layout_gravity="center_horizontal"
+			app:tabMode="scrollable"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

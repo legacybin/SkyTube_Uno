@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">Apie</string>
+    <string name="failed_to_import_subscriptions">Nepavyko importuoti „YouTube“ prenumeratų.</string>
+    <string name="import_subscriptions_parse_error">Nepavyko išanalizuoti failo, kurį įkėlėte: %s.</string>
+    <string name="no_new_channels_found">Nerasta jokių „YouTube“ kanalų, kurių dar nesate užsiprenumeravę.</string>
+    <string name="no_channels_found">Įkeltame faile nepavyko rasti jokių „YouTube“ kanalų.</string>
+    <string name="select_none">Nesirinkti nieko</string>
+    <string name="select_all">Pasirinkti viską</string>
+    <string name="select_sub_file">Pasirinkti prenumeratų failą</string>
+    <string name="subscriptions_to_channels_imported">%d kanalai (-as) importuoti (-as).</string>
+    <string name="unsubscribe_from_all_current_sibbed_channels">Atsisakyti visų šiuo metu prenumeruojamų kanalų prenumeratų.</string>
+    <string name="import_subscriptions_description">Panaikinkite viską, kas yra https://takeout.google.com, išskyrus „YouTube“ ir „YouTube Music“, ir spustelėkite „Visi „YouTube“ duomenys įtraukti“, kad gautumėte tik prenumeratas. Spustelėkite „Kitas“, tada „Sukurti eksportą“. Spustelėkite, kad gautumėte el. laišką su atsisiuntimo nuoroda. Atsisiųskite failą iš savo el. pašto programos ir išskleiskite. Importuokite subscriptions.json (į /Takeout/YouTube ir YouTube Music/subscriptions/) iš jo į SkyTube naudodami toliau pateiktą parinktį „Pasirinkti prenumeratos failą“.</string>
+    <string name="import_subscriptions">Importuoti prenumeratas</string>
+    <string name="error_unable_to_subscribe">Nepavyko užsiprenumeruoti arba atšaukti kanalo (id=%s) prenumeratos</string>
+    <string name="error_check_if_user_has_subbed">Nepavyko patikrinti, ar užsiprenumeravote kanalą (id=%s)</string>
+    <string name="error_get_subbed_channels">Nepavyko gauti kanalų prenumeratų.</string>
+    <string name="channel_unsubscribed">Kanalo prenumerata atšaukta</string>
+    <string name="unsubscribed">Prenumerata atšaukta</string>
+    <string name="channel_subscribe_failed">Nepavyko užsiprenumeruoti kanalo</string>
+    <string name="channel_already_subscribed">Jau užsiprenumeruota</string>
+    <string name="channel_subscribed">Kanalas prenumeruojamas</string>
+    <string name="subscribed">Užprenumeruota</string>
+    <string name="total_subscribers">%,d prenumeratorių</string>
+    <string name="unsubscribe">Atšaukti prenumeratą</string>
+    <string name="subscribe">Prenumeruoti</string>
+    <string name="subscriptions">Prenumeratos</string>
+</resources>

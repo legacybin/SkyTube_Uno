@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent">
+
+	<include
+		android:id="@+id/videos_gridview"
+		layout="@layout/videos_gridview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/noSubscriptionsText"
+		android:visibility="gone"
+		android:background="@color/grid_view_background">
+		<TextView
+			android:text="@string/no_subscriptions_text"
+			style="@style/NoSubscriptionsFeedMsgTextView"/>
+
+		<Button
+			android:id="@+id/importSubscriptionsButton"
+			android:text="@string/import_subscriptions_from_youtube"
+			style="@style/ImportSubscriptionsButton"/>
+
+		<Button
+			android:id="@+id/importBackupButton"
+			android:text="@string/pref_title_import_dbs"
+			style="@style/ImportSubscriptionsButton"/>
+	</LinearLayout>
+
+</FrameLayout>

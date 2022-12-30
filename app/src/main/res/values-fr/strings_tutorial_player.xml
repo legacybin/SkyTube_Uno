@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="next">Suivant</string>
+    <string name="done">Terminé</string>
+    <string name="skip">Sauter</string>
+    <string name="page_counter">%1$d sur %2$d</string>
+    <string name="tutorial_slide_1">Glissez ← pour voir les commentaires.</string>
+    <string name="tutorial_slide_2">Glissez ↑ pour voir la description de la vidéo.</string>
+    <string name="tutorial_slide_3">Glissez ← → pour avancer ou reculer la vidéo.</string>
+    <string name="tutorial_slide_4">Glissez ↑ ↓ pour augmenter ou baisser le son.</string>
+    <string name="tutorial_slide_5">Glissez ↑ ↓ pour ajuster la luminosité.</string>
+    <string name="tutorial_slide_6">Touchez deux fois pour mettre en pause ou lire une vidéo.</string>
+</resources>

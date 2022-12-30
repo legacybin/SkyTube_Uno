@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ SkyTube
+  ~ Copyright (C) 2017 Ramon Mifsud, 2020 Isira Seneviratne
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation (version 3 of the License).
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:fragment="free.rm.skytube.gui.fragments.preferences.VideoPlayerPreferenceFragment"
+        app:icon="@drawable/ic_pref_video_player"
+        app:key="pref_video_player"
+        app:title="@string/pref_video_player_category" />
+
+    <Preference
+        app:fragment="free.rm.skytube.gui.fragments.preferences.VideoBlockerPreferenceFragment"
+        app:icon="@drawable/ic_blocker"
+        app:key="pref_video_blocker"
+        app:title="@string/pref_video_blocker_category" />
+
+    <Preference
+        app:fragment="free.rm.skytube.gui.fragments.preferences.SponsorblockPreferenceFragment"
+        app:icon="@drawable/ic_money_off"
+        app:key="pref_sponsorblock"
+        app:title="@string/pref_sponsorblock_category" />
+
+    <Preference
+        app:fragment="free.rm.skytube.gui.fragments.preferences.BackupPreferenceFragment"
+        app:icon="@drawable/ic_pref_backup"
+        app:key="pref_import_export"
+        app:title="@string/pref_import_export_category" />
+
+    <Preference
+        app:fragment="free.rm.skytube.gui.fragments.preferences.PrivacyPreferenceFragment"
+        app:icon="@drawable/ic_pref_privacy"
+        app:key="pref_privacy"
+        app:title="@string/pref_privacy_category" />
+
+    <Preference
+        app:fragment="free.rm.skytube.gui.fragments.preferences.NetworkPreferenceFragment"
+        app:icon="@drawable/ic_pref_network"
+        app:key="pref_network_downloads"
+        app:title="@string/pref_network_downloads_category" />
+
+    <Preference
+        app:fragment="free.rm.skytube.gui.fragments.preferences.OthersPreferenceFragment"
+        app:icon="@drawable/ic_pref_others"
+        app:key="pref_other"
+        app:title="@string/pref_other_category" />
+
+    <Preference
+        app:fragment="free.rm.skytube.gui.fragments.preferences.AboutPreferenceFragment"
+        app:icon="@drawable/ic_pref_about"
+        app:key="pref_about"
+        app:title="@string/pref_about_category" />
+
+</PreferenceScreen>

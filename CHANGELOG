@@ -1,0 +1,486 @@
+v2.981 - 2022-04-16
+        * Add Sponsorblock support by James Cullum
+        * Update NewPipeExtractor to fix recent Youtube changes
+        * Updated translations for:
+            * Albanian - Besnik Bleta
+            * Arabic - Khalid Qasim
+            * Basque - Julio Montero
+            * Croatian - Milo Ivir
+            * Czech - Jáchym Řezáč
+            * Dutch - Jon Bedet
+            * French - J. Lavoie
+            * German - 3ole
+            * Hindi - Tan
+            * Hungarian - Szia Tomi
+            * Italian - Tommaso Giutna
+            * Norwegian - Allan Nordhøy
+            * Polish - Michal L
+            * Romanian - Igor Sorocean
+            * Russian - lk2322
+            * Simplified Chinese - Eric
+            * Sinhala - Kaveesha
+            * Tamil - Bharath
+            * Thai - Sim WC
+            * Traditional Chinese - Jeff Huang and zica
+            * Turkish - Oğuz Ersen
+            * Ukrainian - Ihor Hordiichuk
+
+v2.980 - 2022-02-02
+        * Update NewPipeExtractor to fix recent Youtube changes - by Chris Bellew
+        * Fix a couple of crashes
+        * Dependency updates
+        * Updated translations for:
+            * Catalan - by DFC
+            * Croatian - by Milo Ivir
+            * Finnish - by Ricky Tigg
+            * French - by J. Lavoie
+            * German - by J. Lavoie and Sascha Werth
+            * Japan - by Takaki Iekura
+            * Portugal - by ssantos
+            * Spanish - by Julio Montero
+            * Simplified Chinese - by Eric
+            * Tamil - by Pugal Krishnan
+            * Turkish - by Oğuz Ersen
+            * Ukrainian - by Ihor Hordiichuk
+            * Vietnamese - by bruh
+
+v2.979 - 2021-11-15
+        * Pause video playback when headphones disconnected - by ilmars
+        * Use the more modern view bindings to construct the UI components - by Isira Seneviratne
+        * Code cleanups and bug fixes - by TacoTheDank
+        * Adding, new snapshot builds to Github.
+        * Add config option to switch on/off the newer format support, and enable DefaultPlayer even on API 14
+        * Subscription import updated to support current YouTube format.
+        * Bug fixes and code cleanups
+        * Updated English labels - by Allan Nordhøy
+        * Updated translations for:
+            * Basque - by Julio Montero
+            * Catalan - by Xean
+            * Croatian - by Milo Ivir
+            * Dutch - by Heimen Stoffels
+            * Finnish - by Kaantaja
+            * French - by J. Lavoie
+            * German - by Florian Holeczek and J. Lavoie
+            * Indonesian - by zmni
+            * Italian - by J. Lavoie and Silvio Pastore
+            * Japanese - by Takaki Iekura
+            * Kabyle - Muḥend Belqasem, R_SACI and Selyan Sliman Amiri
+            * Lithuanian - by Gediminas Murauskas and g
+            * Malayalam - by mobilestemp
+            * Norwegian Bokmål - by Allan Nordhøy
+            * Persian - by roj
+            * Polish - by Michal L
+            * Portuguese - by Sérgio Marques and ssantos
+            * Romanian - by Igor Sorocean
+            * Russian - by Axus Wizix, Nikita Epifanov and Sedative
+            * Simplified Chinese - by Eric and ohsorry
+            * Spanish - by Julio Montero and MS-PC
+            * Swedish - by Swedish
+            * Traditional Chinese - by Jeff Huang
+            * Turkish - by Oğuz Ersen
+            * Ukrainian - by Ihor Hordiichuk and Tymofij Lytvynenko
+            * Vietnamese - by bruh
+
+v2.978 - 21 March 2021
+        * Rewrite the YouTube AsyncTask implementations as methods that use RxJava - by Isira Seneviratne
+        * implementation of play/pause external media controls - by ilmars
+        * Fix freezes/slow UI updates with accessing the database in the background - by Zsombor
+        * Improve subscription listing with database index - by Zsombor
+        * Subscription refresh is not tied to opening up the subscription tab - by Zsombor
+        * Implement 'Trending in XYZ' tab, with country selector - by Zsombor
+        * Fix errors in downloaded file deletion - by Zsombor
+        * Fix layout issues when big fonts are used - by Zsombor
+        * Implement tab hiding/showing without app restart - by Zsombor
+        * Fix a crash on Android 4.0 - by Zsombor
+        * Updated translations for:
+            * Basque and Spanish - by Julio Montero
+            * Catalan - by Alfonso Montero López
+            * Croatian - by Milo Ivir
+            * Dutch - by Heimen Stoffels
+            * Esperanto - by Jakub Fabijan
+            * French - by Thomas Foucher
+            * Japanese - by Takaki Iekura
+            * Indonesian - by Reza Almanda and zmni
+            * Italian - by Silvio Pastore
+            * Latvian - by Darksworm
+            * Hungarian - by Zsombor
+            * Norwegian Bokmål - by Allan Nordhøy
+            * Polish - by Michal L
+            * Portuguese - by Sérgio Marques
+            * Simplified Chinese
+            * Traditional Chinese - by Jeff Huang
+            * Turkish - by Oğuz Ersen
+            * Ukrainian - by Tymofij Lytvynenko
+
+v2.977 - 15 Jan 2021
+        * Implement JSON import for subscriptions - the format which is used by takeout.google.com - by Sebastian Magnusson
+        * Fix crash happing in parsing of the resolution string (It failed for videos with resolutions 2160p60/1080p60/720p60) by Zsombor
+        * Code cleanups, library upgrades by TacoTheDank
+        * Fix updating the search history by Zsombor
+        * Updated translations for:
+            * Arabic - by Mahmoud Hussain
+            * Basque and Spanish - by Julio Montero
+            * Croatian - by Milo Ivir
+            * Dutch - by Heimen Stoffels
+            * Japanese - by Takaki Iekura
+            * Indonesian - by zmni
+            * Norwegian Bokmål - by Allan Nordhøy
+            * Russian - by Александр
+            * Polish - by Michal L
+            * Portuguese - by Sérgio Marques
+            * Traditional Chinese - by Jeff Huang
+            * Turkish - by Oğuz Ersen
+            * Ukrainian
+
+v2.976 - 05 Jan 2021
+        * Video stream selection is greatly improved and extended. Now it is possible to set minimum and maximum resolution and to optimize either for better quality or minimal network bandwith. Reviewing Your setting is higly recommended!
+        * Automatically retry playing the videos on broken connection
+        * Instead of mobile network, the app now checks for metered network usage  by Isira Seneviratne
+        * Update NewPipe backend to support latest YouTube changes.
+        * Using vector icons instead of PNGs for the user interface by Isira Seneviratne
+        * Code cleanups, removing deprecated libraries, using newer constructs by Isira Seneviratne 
+        * Updated translations for:
+            * Basque and Spanish - by Julio Montero
+            * Croatian - by Milo Ivir
+            * Dutch - by Heimen Stoffels
+            * French - by Arnaud Redslob
+            * Hungarian - by Zsombor Gegesy
+            * Norwegian Bokmål - by Allan Nordhøy
+            * Indonesian - by zmni
+            * Polish - by Michal L
+            * Portuguese - by Sérgio Marques
+            * Russian - by Nikita Epifanov
+            * Traditional Chinese - by Jeff Huang
+            * Turkish - by Oğuz Ersen
+            * Ukrainian 
+
+v2.975 - 31 Oct 2020
+        * Fix crash on subscription update
+        * Do not show separator item, when neither side is visible on the GridView
+
+v2.974 - 27 Oct 2020
+        * Using NewPipe backend for loading the playlists, and the trending videos.
+        * Update NewPipe backend to support latest YouTube changes.
+        * Code cleanups, minor optimizations contributed by @okan35 and @TacoTheDank
+        * Fix crashes in handling user inputs in the search field, and in the 'Enter URL' dialog.
+        * Fix a couple of possible source of memory leaks
+        * Added new translations for:
+            * Berber - by Hakim Oubouali
+            * Danish - by Vidar
+        * Updated translations for:
+            * Swedish by Mattias Münster and Luna Jernberg
+            * Portuguese - by ssantos
+            * French - by Nathan
+
+v2.973 - 06 Aug 2020
+        * The NewPipe backend is now the default, so the initial impression of the app will be better.
+        * Upgrade NewPipeExtractor to the latest, to eliminate parsing bugs
+        * Preference flags are saved into the backups - by @okan35
+        * Added menu option to bookmark valid video urls when long pressed - by @atomjack
+        * Add flags to enable resizing the window for better Samsung DeX experience
+        * Updated translations:
+            * Chinese (Traditional) - by Jeff Huang
+            * Croatian - by Milo Ivir
+            * Dutch - by Heimen Stoffels
+            * German - by Milo Ivir
+            * Hungarian - by Zsombor Gegesy
+            * Indonesian - by zmni
+            * Norwegian Bokmal - by Allan Nordhøy
+            * Portuguese - by ssantos
+            * Russian - by Nikita Epifanov
+            * Spanish - by Julio Montero
+            * Turkish - by Oğuz Ersen
+
+v2.972 - 19 Apr 2020
+        * Better URL handling
+            * Opening Youtube URL's from other apps should work better,
+            * SkyTube now can detect better if it's a channel/playlist or video, even on hooktube.com or on invidio.us (or related) sites.
+            * Bookmarking works better too (if it's not a video, then the app just opens the channel/playlist)
+            * Clicking in the video description on channel or playlist links works too
+        * UI fixes which caused occasional crashes, due to timing issues.
+        * Better error messages if the user tries to subscribe to an already subscribed channel, or bookmark an already bookmarked video.
+        * added more playback speed options - by @okan35
+        * Restore Android 4.0 compatibility.
+        * Enable TLS 1.1/1.2 usage for Android 4.1 - 4.4, where it wasn't enabled by default.
+        * Updated translations:
+            * Chinese (Traditional) - by Jeff Huang
+            * Croatian - by Milo Ivir
+            * Dutch - by Heimen Stoffels
+            * French - by Jeannette Lavoie
+            * Hungarian - by Zsombor Gegesy
+            * Indonesian - by zmni
+            * Norwegian Bokmål - by Allan Nordhøy
+            * Portuguese - by ssantos
+            * Spanish - by Julio Montero
+
+v2.971 - 23 Mar 2020
+        * Search result should contain playlists and channels.
+        * Subscription feed checking should display notification instead of a dialog - by @okan35
+        * channel search added for subscriptions - by @okan35
+        * Hide the Block Channel menu item when the Video Blocker is not enabled. - by @atomjack
+        * Migrate PreferenceManager to androidx - by @ChemWater
+        * Implement paging in the bookmark fragment - this will improve the responsiveness of the bookmark tab.
+        * Add padding and background to make the option menuitem more finger-friendly
+        * Rename values-id folder to values-in to enable Indonesian translations
+v2.970 - 26 Jan 2020
+        * Fix Subscription DB upgrade error
+        * Add ability to switch brightness and volume control
+        * Fixing a typo found by Avently, which prevented loading the first video in a page with Youtube API
+        * Re-enabled image and image button in search hints dropdown.
+        * Fix paging with NewPipeBackend
+        * NewPipeExtractor update needed due to Youtube.com change.
+        * Video playback speed controller added
+v2.969 - 31 Dec 2019
+		* Use NewPipe backend for checking new videos on subscriptions.
+		* No need to restart the app for an Youtube key change.
+		* Add checks for network availability before:
+			* channel metadata download
+			* displaying download menuitem
+			* showing the comment panel
+		* Improve URL parsing, to handle more variant.
+		* Add a simple menuitem to disable video gestures without leaving the player screen.
+		* Updated Polish and Hungarian translations
+
+v2.968 - 02 Dec 2019
+		* Reduce the number of Youtube API calls
+		* Implement comment fetching with the NewPipe backend
+		* Fix the repeating search result problem with the NewPipe backend.
+		* Subscription feed refresh should not force the UI to the head of the list.
+		* Show error when comment fetching fails due to Youtube API error.
+
+v2.967 - 02 Nov 2019
+        * Fix crash in Subscription feed retrieval
+        * Fix multiple, concurrent play, due to ExoPlayer creation
+        * App is now able to backup (and restore) channelFiltering and searchHistory databases.
+
+v2.966 - 27 Oct 2019
+        * Implement channel cache, which will reduce network usage, and improve offline experience.
+        * #570 - fix "cannot play video after returning from `open with`"
+        * #571 - fix 'configure channel blocking at the subscribe page leading to fatal crash'
+        * #572 - new policies for downloading videos on mobile network: "Always ask"/"Block"/"Allow"
+        * #574 - "play video under mobile data" dialog can only be dismissed by double clicking "Play Video"
+        * #580 - fix exception in DialogUtils.java line 125
+        * #586 - fix fatal failure on new installations.
+        * Fixes for the NewPipeExtractor backend
+        * dependency upgrades
+        * New Swedish translation.
+
+v2.965 - 27 Sep 2019
+        * Fixes for the NewPipeExtractor backend
+        * Do not block videos on bookmark and downloaded videos tab.
+        * dependency upgrades
+        * Fix to handle dialog cancellation as 'negative' response in couple of places - where an answer is expected.
+        * Remove special icon, which cause crashes on old Androids.
+        * Display YouTube API errors to the user, to avoid confusion.
+        * Updated Russian and Portuguese (Brazil) translation.
+
+v2.964 - 03 Sep 2019
+        * Add ability to use NewPipeExtractor to talk to Youtube servers - not everything is covered, but the basic functionality.
+	* Added ability to bookmark videos by sharing youtube url's from other apps.
+	* Fix bug in Chromecast occured during pause-resume.
+	* Paging implemented in the Subscription Feed - so the feed loads faster now.
+	* Create a new preference fragment for 'Downloads and Network' settings
+	* Updated Russian translation
+
+v2.963 - 17 Aug 2019
+        * Add preference to set custom video download folder
+	* Using com.github.hedzr:android-file-chooser package for file dialogs, instead of com.github.angads25:filepicker
+	* Fix subscription refresh bugs - do not start multiple refresh concurrently
+	* Add scroll to top of list when clicking on current tab
+	* Added Preference to show/hide tabs
+	* Make sure Google Play Services is installed before attempting to support Chromecast
+	* Added Preference to select video download quality
+	* Updated French translations.
+
+v2.962 - 06 Aug 2019:
+	* Add a new Youtube API key, re-use the old keys for F-Droid.
+	* Updated German and Hungarian translations.
+
+v2.961 - 01 Aug 2019:
+	* Fix problem with Youtube API keys
+	* Use newer NewPipeExtractor to fix video downloading issue
+
+v2.96 - 01 Aug 2019:
+	* Chromecast support in SkyTube Extra
+	* Better off-line experience with the downloaded videos, and better handling of off-line startup, where lot's of information
+		previously queried from YouTube, now the app can revert to use the already stored data.
+	* Fix screen saver prevention to only be active during playtime.
+	* Video watch status tracking is much more solid, many small bug were eliminated.
+	* Add ability to disable immersive mode.
+	* Improved search autocomplete experience.
+	* Version upgrades in lot's of dependencies (Using AndroidX component library).
+
+v2.95 - 14 Mar 2019:
+	* Emergency fix: Video playback error.
+	* Updated French, Japanese, Arabic and Turkish translations.
+
+v2.94 - 03 Feb 2019:
+	* Videos displayed within a channel or playlist fragment will no longer output the channel name
+	  given that the user is already within the channel fragment.
+	* App is now using newer third-party libraries.
+	* Updated French, Japanese, Indonesian, Spanish, Chinese (traditional), Turkish, Arabic, Italian, Polish, Persian, Norwegian Bokmål, Portuguese (Portugal), German, Dutch and Croatian translations.
+
+v2.93 - 18 Nov 2018:
+	* Added an option to enable/disable the video blocker.
+	* If the gestures control is disabled, the video brightness will be identical to those used by the Android System.
+	* Added preferred resolution when using mobile network (instead of WIFI).
+	* Added Persian translations.
+	* Updated Spanish, Portuguese (Portugal), Turkish, German, Polish, Italian, Croatian, Dutch, Norwegian Bokmål, Russian and Chinese (Traditional) translations.
+
+v2.92 - 14 Oct 2018:
+	* Added Android 9 (API 28) support.
+	* Video gestures can now be enabled/disabled.
+	* Users are now warned before downloading/streaming videos on mobile network (such as 4G).  This
+	  warning can be disabled.
+	* The video publishing date for downloaded videos is now displayed/calculated correctly.
+	* Lazy loading for tabs - potentially reducing network usage.
+	* Added option to automatically download videos to folders named after the channel.
+	* Added Croatian translations.
+	* Updated German, Polish, Spanish, Japanese, French, Portuguese (Brazil), Portuguese (Portugal),
+	  Italian, Chinese (Traditional), Norwegian Bokmål, Russian and Dutch translations.
+	* Bug fixes and other minor improvements.
+
+v2.91 - 07 Sep 2018:
+	* Emergency fix: "This video is unavailable" error occurred due to recent YouTube changes.
+	* Updated Italian, French and Norwegian Bokmål translations.
+
+v2.90 - 19 Aug 2018:
+	* Added a video blocker, which includes:
+		- Channel blacklisting;
+		- Channel whitelisting;
+		- Block videos if their language is not the same as the user's preferred one(s);
+		- Low views video blocking;
+		- High dislikes video blocking;
+		- Icon in the toolbar displaying how many videos were blocked.
+	* Added search history:  search history is stored and used as suggestions for future searches (this feature can be disabled).
+	* Added volume and brightness swipe controls.
+	* Videos are now played using the Exoplayer.  Legacy player still supported.
+	* App now gives the user the option to resume playing (previously) partially watched videos.
+    * YouTube's videos and playlists links inside the video description are now handled and opened inside SkyTube.
+    * New launcher icon.
+    * Subscribed channels can now be sorted alphabetically.
+    * Added tutorial for the gestures applicable to the video player.
+	* Added Japanese translations.
+	* Added Chinese (traditional) translations.
+	* Added Vietnamese translations.
+	* Added Indonesian translations.
+	* Updated Russian, Norwegian Bokmål, Dutch, German, Hungarian, Turkish, Italian, Portuguese and French translations.
+	* Bug fixes and other minor improvements.
+
+v2.82 - 24 Mar 2018:
+	* Emergency fix:  API DDOS attack mitigation controls.
+
+v2.81 - 28 Jan 2018:
+	* Emergency fix: "This video is unavailable" error occurred for some YouTube videos.
+
+v2.80 - 22 Jan 2018:
+	* Added channel playlist support.
+	* Added an option to download videos.
+	* YouTube Player improvements, including:
+		- Immersive mode:  comments and video description can be viewed if the user swipes to the left and top respectively.
+		- Double tap can stop/play the video.
+		- Gesture mode:  swipe to the left to view comments; swipe to the top to view video description.
+	* Added thumbnail viewer for YouTube videos.
+	* Added an option to download videos' thumbnails.
+	* Main and channel toolbar aesthetics enhancements.
+	* Users can now view channel's information/description via the about tab.
+	* Feed is refreshed automatically.
+	* Improved loading time for subscribed channels list.
+	* Reduced subscriptions feeds refreshing time.
+	* Added Russian translations.
+	* Added Norwegian Bokmål translations.
+	* Added Arabic translations.
+	* Added Dutch translations.
+	* Added Turkish translations.
+	* Updated Polish, German, Hungarian and Portuguese translations.
+	* Bug fixes and other minor improvements.
+
+v2.70 - 05 Nov 2017:
+	* Users can now import their YouTube's subscriptions list into SkyTube.
+	* Added Android 8 support.
+	* Updated Spanish translations.
+	* Updated French translations.
+	* App is now using newer third-party libraries.
+	* Bug fixes and other minor improvements.
+
+v2.60 - 25 Jun 2017:
+	* Preference overhaul and improved user-friendliness:  Preferences are now using a two-pane
+	  layout.
+	* Added option for users to backup and import their subscriptions and bookmarks databases.
+	* Added option to change the video player's orientation.
+	* App now is able to detect if a video is blocked by country.
+	* Fixed issue #111:  Fixed a bug which caused to app to crash on certain devices if the back
+	  button is pressed.
+	* Updated Polish translations.
+	* SkyTube Extra:  Added the option for user to check for updates via the About preferences.
+
+v2.50 - 21 May 2017:
+	* App is now using NewPipeExtractor library to retrieve video streams' URLs.  In turn, this
+	  fixed #7.
+	* Fixed app auto-updater bug for Android 7.0+
+	* Added Italian translations.
+	* Added Portuguese translations.
+	* Updated Spanish translations.
+	* Fixed bug #94 and #111:  App crashed when the user presses the back button while on the Main
+	  Activity.
+	* Fixed a bug which caused the app to crash when the YouTube's API quota is reached.
+	* Other minor bug fixes.
+
+v2.41 - 23 Apr 2017:
+	* This version was released mainly because of F-Fdroid's version 2.4(0) did not include the
+	  following fix (d3a0bab): App used to crash when the MainFragment is rotated.
+	* Added a list of contributors which can be accessed via the Preferences.
+
+v2.4 - 10 Apr 2017:
+    * Added subscriptions feed tab.
+    * Added the option for users to use their own YouTube API key.
+    * App is able to detect live streams (and offers user to play such videos externally).
+    * Added French translations.
+    * Added German translations.
+    * Reduced the app stuttering issue when scrolling down videos together with other optimizations.
+    * Fixed bug #91:  App could not open video notification links sent by YouTube via email.
+    * Fixed bug #32:  Video player's title bar was not hiding on Android 5.0+.
+    * Numerous other bug fixes.
+    * App now correctly handles videos with disable ratings.
+    * Moved the Video "Share", "Copy to clipboard" and "bookmark video" options/functionality from
+      video cell to the actual video fragment.
+
+v2.3 - 19 Feb 2017:
+    * Added video bookmarks feature.
+    * Added Polish translation.
+    * Added default tab preference.
+    * Numerous bug fixes.
+
+v2.2 - 31 Jan 2017:
+    * Emergency fix: "could not load decryption code" error for all YouTube videos.  This was due
+      to sudden change in YouTube website/service.
+    * Featured & Most Popular videos are now placed in tabs.
+    * Featured & Most Popular & channel videos can be swiped down in order to refresh.
+    * Added Hungarian translation.
+
+v2.1 - 23 Oct 2016:
+    * Added Spanish translation.
+    * Now using Picasso library for remote image loading (before such process was done manually by
+      the app).
+    * Orientation changes no longer causes the app to loss the current scroll position wrt Most Pop
+      and Featured videos.
+    * Issue #21:  Android 4.0 is now supported.
+    * Fixed issue #7:  i.e. when a user tries to view some videos the following error used to
+      popup:  "An error has occurred while getting video streams for xxxxxxxx".
+    * Playback errors are now more human friendly.
+    * Fixed issue #26:  Saves the current video position when the app is minimized or when a user
+      clicks on the video's channel.
+
+v2.0 - 27 Aug 2016:
+    * Users can now subscribe to a channel.
+    * App update checker.
+    * Faster loading time and smoother scrolling.
+    * New material theme.
+    * Major cosmetic improvements to the Channel fragment.
+    * Videos: Add open-with to the video's context menu.
+    * External programs can open YouTube videos using SkyTube.
+    * Paste/Enter video URL in SkyTube.
+    * Comments: show the author's thumbnail.
+
+v1.0 - 24 Feb 2016:
+    * Initial release.

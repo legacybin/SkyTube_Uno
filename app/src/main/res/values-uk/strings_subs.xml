@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="import_subscriptions_description">Приберіть вибір з усіх https://takeout.google.com, окрім «YouTube і YouTube Music», і натисніть «Усі включені дані YouTube», щоб отримати лише підписки. Натисніть кнопку «Далі», а потім «Створити експорт». Клацніть, щоб отримати повідомлення електронною поштою з посиланням для завантаження. Завантажте файл зі свого поштового клієнта та видобудьте його. Імпортуйте subscriptions.json (у /Takeout/YouTube and YouTube Music/subscriptions/) з нього в SkyTube за допомогою «Виберіть файл підписки» внизу.</string>
+    <string name="about">Про застосунок</string>
+    <string name="failed_to_import_subscriptions">Не вдалося імпортувати підписки YouTube.</string>
+    <string name="import_subscriptions_parse_error">Не вдалося проаналізувати вивантажений файл: %s.</string>
+    <string name="no_new_channels_found">Не знайдено жодних каналів YouTube, на які ви ще не підписані.</string>
+    <string name="no_channels_found">Не вдалося знайти жодного каналу YouTube у вивантаженому файлі.</string>
+    <string name="select_none">Нічого не вибирати</string>
+    <string name="select_all">Вибрати все</string>
+    <string name="select_sub_file">Вибирати файл підписки</string>
+    <string name="subscriptions_to_channels_imported">%d каналів імпортовано.</string>
+    <string name="unsubscribe_from_all_current_sibbed_channels">Відписатися від усіх каналів, на які ви підписані.</string>
+    <string name="import_subscriptions">Імпорт підписок</string>
+    <string name="error_unable_to_subscribe">Не вдалося (від)підписатися від/на канал (id=%s)</string>
+    <string name="error_check_if_user_has_subbed">Не вдалося перевірити, чи підписалися ви на канал (id=%s)</string>
+    <string name="error_get_subbed_channels">Не вдалося отримати підписки на канали.</string>
+    <string name="channel_unsubscribed">Ви відписалися від каналу</string>
+    <string name="unsubscribed">Ви підписалися</string>
+    <string name="channel_subscribe_failed">Не вдалося підписатися на канал</string>
+    <string name="channel_already_subscribed">Ви вже підписалися</string>
+    <string name="channel_subscribed">Ви підписались на канал</string>
+    <string name="subscribed">Ви підписалися</string>
+    <string name="total_subscribers">%,d підписників</string>
+    <string name="unsubscribe">Відписатися</string>
+    <string name="subscribe">Підписатися</string>
+    <string name="subscriptions">Підписки</string>
+</resources>

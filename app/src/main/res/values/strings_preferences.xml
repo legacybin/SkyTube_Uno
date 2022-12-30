@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="preferences">Preferences</string>
+    <string name="key_preferences">preferences</string>
+    <string name="pref_video_player_category">Video Player</string>
+    <string name="pref_key_maximum_res" translatable="false">pref_maximum_resolution</string>
+    <string name="pref_title_maximum_res">Highest Resolution</string>
+    <string name="pref_summary_maximum_res">Select highest resolution:  %s</string>
+    <string name="pref_key_minimum_res" translatable="false">pref_minimum_resolution</string>
+    <string name="pref_title_minimum_res">Lowest Resolution</string>
+    <string name="pref_summary_minimum_res">Select lowest resolution:  %s</string>
+    <string name="pref_key_choose_player" translatable="false">pref_key_choose_player</string>
+    <string name="pref_title_choose_player">Video Player</string>
+    <string name="pref_summary_choose_player">Video player to use:  %s</string>
+    <string-array name="pref_video_players">
+        <item>Default</item>
+        <item>Legacy (unsupported)</item>
+        <item>Official</item>
+    </string-array>
+    <string name="no_resolution_specified">None</string>
+    <string name="pref_default_player_value" translatable="false">default</string>
+    <string name="pref_legacy_player_value" translatable="false">legacy_v1</string>
+    <string name="pref_official_player_value" translatable="false">official</string>
+    <string-array name="pref_video_players_values" translatable="false">
+        <item>@string/pref_default_player_value</item>
+        <item>@string/pref_legacy_player_value</item>
+        <item>@string/pref_official_player_value</item>
+        <!-- this should remain the last item -->
+    </string-array>
+    <string name="pref_category_metered_network">Metered Network</string>
+    <string name="pref_title_minimum_res_metered">Lowest resolution for metered network</string>
+    <string name="pref_key_minimum_res_mobile" translatable="false">pref_minimum_resolution_mobile</string>
+    <string name="pref_summary_minimum_res_metered">Select lowest resolution when streaming via a metered network:  %s</string>
+    <string name="pref_title_maximum_res_metered">Highest resolution for metered network</string>
+    <string name="pref_key_maximum_res_mobile" translatable="false">pref_maximum_resolution_mobile</string>
+    <string name="pref_summary_maximum_res_metered">Select your maximum resolution when streaming via a metered network:  %s</string>
+    <string name="pref_key_mobile_network_usage_policy" translatable="false">pref_key_mobile_network_usage_policy</string>
+    <string name="pref_title_metered_network_usage">Metered Network Usage</string>
+    <string name="pref_summary_metered_network_usage">What to do if using a metered network for downloading/watching videos: %s</string>
+    <string-array name="pref_metered_network_usage">
+        <item>Always ask</item>
+        <item>Block</item>
+        <item>Allow</item>
+    </string-array>
+    <string name="pref_metered_network_usage_value_ask" translatable="false">ask</string>
+    <string name="pref_metered_network_usage_value_block" translatable="false">block</string>
+    <string name="pref_metered_network_usage_value_allow" translatable="false">allow</string>
+    <string-array name="pref_mobile_network_usage_values" translatable="false">
+        <item>@string/pref_metered_network_usage_value_ask</item>
+        <item>@string/pref_metered_network_usage_value_block</item>
+        <item>@string/pref_metered_network_usage_value_allow</item>
+    </string-array>
+    <string name="pref_import_export_category">Import/Export</string>
+    <string name="pref_title_backup_dbs">Back up Databases</string>
+    <string name="pref_key_backup_dbs" translatable="false">pref_key_backup_db</string>
+    <string name="pref_summary_backup_dbs">Back up your bookmarks and subscriptions.</string>
+    <string name="pref_title_import_dbs">Import Backup</string>
+    <string name="pref_key_import_dbs" translatable="false">pref_key_import_db</string>
+    <string name="pref_summary_import_dbs">Import your bookmarks and subscriptions backup.</string>
+    <string name="databases_backing_up">Backing up…</string>
+    <string name="databases_backup_success">Databases backed up to %s</string>
+    <string name="databases_backup_fail">Could not back up your databases.</string>
+    <string name="databases_import_select_backup">Select backup file to import</string>
+    <string name="databases_import_nothing_selected">Nothing was selected…</string>
+    <string name="databases_import_warning_message">Replace bookmarks and subscriptions with the data in the selected backup file?</string>
+    <string name="continue_">Continue</string>
+    <string name="databases_importing">Importing…</string>
+    <string name="databases_import_fail">Could not import your databases.</string>
+    <string name="databases_import_success">Restart the app to use the new bookmarks and subscriptions.</string>
+    <string name="pref_key_import_subs" translatable="false">pref_key_import_subs</string>
+    <string name="pref_title_import_subs">Import Subscriptions From YouTube</string>
+    <string name="pref_summary_import_subs">Import your subscriptions from your YouTube account.</string>
+    <string name="subs_import_select_backup">Select YouTube XML file to import</string>
+    <string name="pref_chromecast_category">Chromecast</string>
+    <string name="pref_key_chromecast_category" translatable="false">chromecast_category</string>
+    <string name="pref_key_chromecast_none" translatable="false">default_chromecast_key</string>
+    <string name="pref_title_chromecast_none">None</string>
+    <string name="pref_title_autocast">AutoCast</string>
+    <string name="pref_key_autocast" translatable="false">pref_external_launch</string>
+    <string name="pref_summary_autocast">Chromecast device for playback when using other video apps in SkyTube.</string>
+    <string name="pref_network_downloads_category">Network and Downloads</string>
+    <string name="pref_about_category">About</string>
+    <string name="pref_title_website">Website</string>
+    <string name="pref_key_website" translatable="false">pref_website</string>
+    <string name="pref_title_credits">Credits</string>
+    <string name="pref_key_credits" translatable="false">pref_credits</string>
+    <string name="pref_summary_credits">Great people and libre projects behind this app.</string>
+    <string name="pref_title_version">Version</string>
+    <string name="pref_key_version" translatable="false">pref_version</string>
+    <string name="pref_title_updates">Updates</string>
+    <string name="pref_key_updates" translatable="false">pref_updates</string>
+    <string name="pref_summary_updates">Check for new versions.</string>
+    <string name="pref_title_license">Copylefted Libre License</string>
+    <string name="pref_key_license" translatable="false">pref_license</string>
+    <string name="pref_summary_license">GPLv3+</string>
+    <string name="app_license">
+		Copyright © 2015–2018 Ramon Mifsud\n
+
+		\nThis program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation (version 3 of the License).\n
+
+		\nThis program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.\n
+
+		\nYou should have received a copy of the GNU General Public License
+		along with this program. If not, see &lt;https://www.gnu.org/licenses/&gt;
+	</string>
+    <string name="i_agree">I Agree</string>
+    <!-- extracted from  YouTube.com > 3 dot menu > Language -->
+    <string-array name="languages_names" translatable="false">
+        <item>Afrikaans</item>
+        <item>Azərbaycan</item>
+        <item>Bahasa Indonesia</item>
+        <item>Bahasa Malaysia</item>
+        <item>Bosanski</item>
+        <item>Català</item>
+        <item>Čeština</item>
+        <item>Dansk</item>
+        <item>Deutsch</item>
+        <item>Eesti</item>
+        <item>English (All)</item>
+        <item>English (UK)</item>
+        <item>English (US)</item>
+        <item>Español (España)</item>
+        <item>Español (Latinoamérica)</item>
+        <item>Español (US)</item>
+        <item>Euskara</item>
+        <item>Filipino</item>
+        <item>Français</item>
+        <item>Français (Canada)</item>
+        <item>Galego</item>
+        <item>Hrvatski</item>
+        <item>IsiZulu</item>
+        <item>Íslenska</item>
+        <item>Italiano</item>
+        <item>Kiswahili</item>
+        <item>Latviešu valoda</item>
+        <item>Lietuvių</item>
+        <item>Magyar</item>
+        <item>Nederlands</item>
+        <item>Norsk</item>
+        <item>O‘zbek</item>
+        <item>Polski</item>
+        <item>Português</item>
+        <item>Português (Brasil)</item>
+        <item>Română</item>
+        <item>Shqip</item>
+        <item>Slovenčina</item>
+        <item>Slovenščina</item>
+        <item>Srpski</item>
+        <item>Suomi</item>
+        <item>Svenska</item>
+        <item>Tiếng Việt</item>
+        <item>Türkçe</item>
+        <item>Беларуская</item>
+        <item>Български</item>
+        <item>Кыргызча</item>
+        <item>Қазақ Тілі</item>
+        <item>Македонски</item>
+        <item>Монгол</item>
+        <item>Русский</item>
+        <item>Српски</item>
+        <item>Українська</item>
+        <item>Ελληνικά</item>
+        <item>Հայերեն</item>
+        <item>עברית</item>
+        <item>اردو</item>
+        <item>العربية</item>
+        <item>فارسی</item>
+        <item>नेपाली</item>
+        <item>मराठी</item>
+        <item>हिन्दी</item>
+        <item>বাংলা</item>
+        <item>ਪੰਜਾਬੀ</item>
+        <item>ગુજરાતી</item>
+        <item>தமிழ்</item>
+        <item>తెలుగు</item>
+        <item>ಕನ್ನಡ</item>
+        <item>മലയാളം</item>
+        <item>සිංහල</item>
+        <item>ภาษาไทย</item>
+        <item>ລາວ</item>
+        <item>ဗမာ</item>
+        <item>ქართული</item>
+        <item>አማርኛ</item>
+        <item>ខ្មែរ</item>
+        <item>中文</item>
+        <item>中文 (简体)</item>
+        <item>中文 (繁體)</item>
+        <item>中文 (香港)</item>
+        <item>日本語</item>
+        <item>한국어</item>
+    </string-array>
+    <!-- extracted from:  https://developers.google.com/youtube/v3/docs/i18nLanguages/list -->
+    <string-array name="languages_iso639_codes" translatable="false">
+        <item>af</item>
+        <item>az</item>
+        <item>id</item>
+        <item>ms</item>
+        <item>bs</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>da</item>
+        <item>de</item>
+        <item>et</item>
+        <item>"en(?:-.+)?"</item>
+        <!-- "en" or "en-US" or "en-CA" ... -->
+        <item>en-GB</item>
+        <item>"en(?:-US)?"</item>
+        <!-- "en" or "en-US" -->
+        <item>es(?:-ES)?"</item>
+        <!-- Somehow YouTube uses both "es" and "es-ES" for Spanish -->
+        <item>es-419</item>
+        <item>es-US</item>
+        <item>eu</item>
+        <item>fil</item>
+        <item>fr</item>
+        <item>fr-CA</item>
+        <item>gl</item>
+        <item>hr</item>
+        <item>zu</item>
+        <item>is</item>
+        <item>it</item>
+        <item>sw</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>hu</item>
+        <item>nl</item>
+        <item>no</item>
+        <item>uz</item>
+        <item>pl</item>
+        <item>pt-PT</item>
+        <item>"pt(?:-BR)?"</item>
+        <!-- Somehow YouTube uses both "pt" and "pt-BR" for Brazilian Portuguese -->
+        <item>ro</item>
+        <item>sq</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>sr-Latn</item>
+        <item>fi</item>
+        <item>sv</item>
+        <item>vi</item>
+        <item>tr</item>
+        <item>be</item>
+        <item>bg</item>
+        <item>ky</item>
+        <item>kk</item>
+        <item>mk</item>
+        <item>mn</item>
+        <item>ru</item>
+        <item>sr</item>
+        <item>uk</item>
+        <item>el</item>
+        <item>hy</item>
+        <item>iw</item>
+        <item>ur</item>
+        <item>ar</item>
+        <item>fa(?:-IR)?"</item>
+        <!-- "fa" or "fa-IR" -->
+        <item>ne</item>
+        <item>mr</item>
+        <item>hi</item>
+        <item>bn</item>
+        <item>pa</item>
+        <item>gu</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>kn</item>
+        <item>ml</item>
+        <item>si</item>
+        <item>th</item>
+        <item>lo</item>
+        <item>my</item>
+        <item>ka</item>
+        <item>am</item>
+        <item>km</item>
+        <item>zh(?:-.+)?"</item>
+        <!-- "zn" or "zn-CN" ... -->
+        <item>zh-CN</item>
+        <item>zh-TW</item>
+        <item>zh-HK</item>
+        <item>ja</item>
+        <item>ko</item>
+    </string-array>
+    <!-- NB for Translators:  Country names shall all be written in English -->
+    <string-array name="country_names" translatable="false">
+        <item>Worldwide (All)</item>
+        <item>Algeria</item>
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahrain</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Brazil</item>
+        <item>Bulgaria</item>
+        <item>Canada</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Croatia</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Egypt</item>
+        <item>Estonia</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kuwait</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Libya</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macedonia</item>
+        <item>Malaysia</item>
+        <item>Mexico</item>
+        <item>Montenegro</item>
+        <item>Morocco</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Nigeria</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Taiwan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>Vietnam</item>
+        <item>Yemen</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string-array name="country_codes" translatable="false">
+        <item/>
+        <item>DZ</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>AT</item>
+        <item>AZ</item>
+        <item>BH</item>
+        <item>BY</item>
+        <item>BE</item>
+        <item>BA</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CL</item>
+        <item>CO</item>
+        <item>HR</item>
+        <item>CZ</item>
+        <item>DK</item>
+        <item>EG</item>
+        <item>EE</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GE</item>
+        <item>DE</item>
+        <item>GH</item>
+        <item>GR</item>
+        <item>HK</item>
+        <item>HU</item>
+        <item>IS</item>
+        <item>IN</item>
+        <item>ID</item>
+        <item>IQ</item>
+        <item>IE</item>
+        <item>IL</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>JO</item>
+        <item>KZ</item>
+        <item>KE</item>
+        <item>KW</item>
+        <item>LV</item>
+        <item>LB</item>
+        <item>LY</item>
+        <item>LT</item>
+        <item>LU</item>
+        <item>MK</item>
+        <item>MY</item>
+        <item>MX</item>
+        <item>ME</item>
+        <item>MA</item>
+        <item>NP</item>
+        <item>NL</item>
+        <item>NZ</item>
+        <item>NG</item>
+        <item>NO</item>
+        <item>OM</item>
+        <item>PK</item>
+        <item>PE</item>
+        <item>PH</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>PR</item>
+        <item>QA</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SA</item>
+        <item>SN</item>
+        <item>RS</item>
+        <item>SG</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>ZA</item>
+        <item>KR</item>
+        <item>ES</item>
+        <item>LK</item>
+        <item>SE</item>
+        <item>CH</item>
+        <item>TW</item>
+        <item>TZ</item>
+        <item>TH</item>
+        <item>TN</item>
+        <item>TR</item>
+        <item>UG</item>
+        <item>UA</item>
+        <item>AE</item>
+        <item>GB</item>
+        <item>VN</item>
+        <item>YE</item>
+        <item>ZW</item>
+    </string-array>
+    <string name="system_default_country">System</string>
+    <string name="pref_other_category">Others</string>
+    <string name="pref_key_default_tab" translatable="false">pref_default_tab</string>
+    <string name="pref_key_default_tab_name" translatable="false">pref_default_tab_name</string>
+    <string name="pref_title_default_tab">Default Tab</string>
+    <string name="pref_summary_default_tab">Tab to show when SkyTube launches: %s</string>
+    <string name="pref_key_hide_tabs" translatable="false">pref_hide_tabs</string>
+    <string name="pref_title_hide_tabs">Hide Tabs</string>
+    <string name="pref_summary_hide_tabs">Choose tabs not to show. Restart required.</string>
+    <string name="pref_hide_tabs_restart">Restart the app use these tabs.</string>
+    <string-array name="tab_list_values" translatable="false">
+        <item>MainFragment.featuredVideosFragment</item>
+        <item>MainFragment.mostPopularVideosFragment</item>
+        <item>MainFragment.subscriptionsFeedFragment</item>
+        <item>MainFragment.bookmarksFragment</item>
+        <item>MainFragment.downloadedVideosFragment</item>
+    </string-array>
+    <string name="pref_key_feed_notification" translatable="false">pref_key_feed_notification</string>
+    <string name="pref_title_feed_notification">Feed Auto Notification</string>
+    <string name="pref_summary_feed_notification">How often to look for new videos from subscribed channels: %s</string>
+    <string-array name="feed_notification">
+        <item>Off</item>
+        <item>6 Hours</item>
+        <item>12 Hours</item>
+        <item>24 Hours</item>
+    </string-array>
+    <!-- Notification values are in milliseconds -->
+    <string-array name="feed_notification_values" translatable="false">
+        <item>0</item>
+        <item>21600000</item>
+        <!-- 6 hours -->
+        <item>43200000</item>
+        <!-- 12 hours -->
+        <item>86400000</item>
+        <!-- 24 hours -->
+    </string-array>
+    <string name="pref_key_screen_orientation" translatable="false">pref_key_screen_orientation</string>
+    <string name="pref_title_screen_orientation">Screen Orientation</string>
+    <string name="pref_summary_screen_orientation">Video player orientation:  %s</string>
+    <string-array name="screen_orientations">
+        <item>Auto</item>
+        <item>Landscape</item>
+        <item>Portrait</item>
+        <item>Sensor</item>
+    </string-array>
+    <string name="pref_screen_auto_value" translatable="false">auto</string>
+    <string name="pref_screen_landscape_value" translatable="false">landscape</string>
+    <string name="pref_screen_portrait_value" translatable="false">portrait</string>
+    <string name="pref_screen_sensor_value" translatable="false">sensor</string>
+    <string-array name="screen_orientations_values" translatable="false">
+        <item>@string/pref_screen_auto_value</item>
+        <item>@string/pref_screen_landscape_value</item>
+        <item>@string/pref_screen_portrait_value</item>
+        <item>@string/pref_screen_sensor_value</item>
+    </string-array>
+    <string name="pref_key_disable_screen_gestures" translatable="false">pref_key_screen_gestures</string>
+    <string name="pref_title_disable_screen_gestures">No video gestures</string>
+    <string name="pref_summary_disable_screen_gestures">Turn off gestures to control volume, brightness and seeking forward/backwards in videos.</string>
+    <string name="pref_video_continuous_repeat_toggle">Continuous repetition</string>
+    <string name="pref_key_enable_immersive_mode" translatable="false">pref_key_enable_immersive_mode</string>
+    <string name="pref_title_enable_immersive_mode">Immersive mode</string>
+    <string name="pref_summary_enable_immersive_mode">Hide navigation bar and the status bar during playback.</string>
+    <string name="pref_key_switch_volume_and_brightness" translatable="false">pref_key_switch_volume_and_brightness</string>
+    <string name="pref_title_switch_volume_and_brightness">Switch Volume and Brightness Gesture</string>
+    <string name="pref_summary_switch_volume_and_brightness">Places the volume control on the right, and brightness on the left.</string>
+    <string name="pref_youtube_api_key" translatable="false">pref_youtube_api_key</string>
+    <string name="pref_title_youtube_api_key">YouTube API key</string>
+    <string name="pref_summary_youtube_api_key">Enter a personal YouTube API key to use instead.</string>
+    <string name="pref_youtube_api_key_error">Could not validate the API Key you entered.</string>
+    <string name="pref_youtube_api_key_custom">Restart app to use the new YouTube API key.</string>
+    <string name="pref_youtube_api_key_default">Restart app to use the default YouTube API key instead.</string>
+    <string name="pref_use_default_newpipe_backend" translatable="false">pref_use_default_newpipe_backend</string>
+    <string name="pref_title_use_newpipe_backend">NewPipe back-end</string>
+    <string name="pref_summary_use_newpipe_backend">Use the NewPipe API to access YouTube…</string>
+    <string name="restart">Restart</string>
+    <string name="pref_key_subscriptions_alphabetical_order" translatable="false">pref_key_subscriptions_alphabetical_order</string>
+    <string name="pref_title_subscriptions_alphabetical_order">Sort Channels Alphabetically</string>
+    <string name="pref_summary_subscriptions_alphabetical_order">Lists subscribed Channels alphabetically.</string>
+    <string name="pref_key_brightness_level" translatable="false">pref_key_brightness_level</string>
+    <string name="pref_category_downloads">Downloads</string>
+    <string name="pref_category_video_resolutions">Video Resolution</string>
+    <string name="pref_category_download_resolutions">Video resolution for downloads</string>
+    <string name="pref_key_download_to_separate_directories" translatable="false">pref_key_download_to_separate_directories</string>
+    <string name="pref_title_download_to_separate_directories">Channel Folder Downloads</string>
+    <string name="pref_summary_download_to_separate_directories">Saves videos in folders based on the channel name.</string>
+    <string name="pref_key_video_download_folder" translatable="false">pref_key_video_download_folder</string>
+    <string name="pref_popup_title_video_download_folder">Choose Folder</string>
+    <string name="pref_title_video_download_folder">Video Download Folder</string>
+    <string name="pref_summary_video_download_folder">Videos are downloaded to %s</string>
+    <string name="pref_key_video_download_maximum_resolution" translatable="false">pref_key_video_maximum_resolution</string>
+    <string name="pref_video_download_maximum_resolution_title">Highest Video Download Resolution</string>
+    <string name="pref_video_download_maximum_resolution_summary">Video downloads will be at most be %s</string>
+    <string name="pref_key_video_download_minimum_resolution" translatable="false">pref_key_video_minimum_resolution</string>
+    <string name="pref_video_download_minimum_resolution_title">Lowest Video Download Resolution</string>
+    <string name="pref_video_download_minimum_resolution_summary">Video downloads will be at least be %s</string>
+    <string name="pref_key_video_quality" translatable="false">pref_key_video_quality</string>
+    <string name="pref_key_video_quality_on_mobile" translatable="false">pref_key_video_quality_on_mobile</string>
+    <string name="pref_key_video_quality_for_downloads" translatable="false">pref_key_video_quality_for_downloads</string>
+    <string name="pref_key_video_quality_title">Video Quality Selection</string>
+    <string name="pref_key_video_quality_summary">Optimize for: %s</string>
+    <string name="pref_key_video_quality_metered_title">Video Quality Selection on Metered</string>
+    <string name="pref_key_video_quality_metered_summary">Optimize for: %s</string>
+    <string name="pref_key_video_quality_for_downloads_title">Video Quality Selection for Downloads</string>
+    <string name="pref_key_video_quality_for_downloads_summary">Optimize for: %s</string>
+
+    <string name="pref_key_use_newer_formats" translatable="false">pref_key_use_newer_formats</string>
+    <string name="pref_key_use_newer_formats_title">Try newer Video formats</string>
+    <string name="pref_key_use_newer_formats_summary">Sound and video may suffer on old Android versions without support.</string>
+    <string name="pref_key_playback_speed" translatable="false">pref_key_playback_speed</string>
+    <string name="pref_title_playback_speed">Default playback speed</string>
+    <string name="pref_summary_playback_speed">Default playback speed:  %s</string>
+    <string-array name="playback_speeds">
+        <item>0.6x</item>
+        <item>0.8x</item>
+        <item>1.0x</item>
+        <item>1.2x</item>
+        <item>1.4x</item>
+        <item>1.6x</item>
+        <item>1.8x</item>
+        <item>2.0x</item>
+        <item>2.5x</item>
+        <item>3.0x</item>
+        <item>3.5x</item>
+        <item>4.0x</item>
+        <item>4.5x</item>
+        <item>5.0x</item>
+        <item>5.5x</item>
+        <item>6.0x</item>
+    </string-array>
+    <string-array name="playback_speeds_values" translatable="false">
+        <item>0.6</item>
+        <item>0.8</item>
+        <item>1.0</item>
+        <item>1.2</item>
+        <item>1.4</item>
+        <item>1.6</item>
+        <item>1.8</item>
+        <item>2.0</item>
+        <item>2.5</item>
+        <item>3.0</item>
+        <item>3.5</item>
+        <item>4.0</item>
+        <item>4.5</item>
+        <item>5.0</item>
+        <item>5.5</item>
+        <item>6.0</item>
+    </string-array>
+
+    <!--
+        VIDEO BLOCKER
+    -->
+    <string name="pref_video_blocker_category">Video Blocker</string>
+    <string name="pref_key_enable_video_blocker" translatable="false">pref_key_enable_video_blocker</string>
+    <string name="pref_title_enable_video_blocker" translatable="false">@string/pref_video_blocker_category</string>
+    <string name="pref_summary_enable_video_blocker">Video blocker.</string>
+    <string name="pref_channels_filter_category">Channel Filters</string>
+    <string name="pref_key_channel_filter_method" translatable="false">pref_key_channel_filter_method</string>
+    <string name="pref_title_channel_filter_method">Channel Filter Method</string>
+    <string name="pref_summary_channel_filter_method">Select channel filtering method:  %s</string>
+    <string name="disabled">Disabled</string>
+    <string-array name="channel_filtering_list">
+        <item>Blacklisting</item>
+        <item>Whitelisting</item>
+    </string-array>
+    <string name="channel_blacklisting_filtering" translatable="false">channel_blacklisting_filtering</string>
+    <string name="channel_whitelisting_filtering" translatable="false">channel_whitelisting_filtering</string>
+    <string-array name="channel_filtering_values_list" translatable="false">
+        <item>@string/channel_blacklisting_filtering</item>
+        <item>@string/channel_whitelisting_filtering</item>
+    </string-array>
+    <string name="pref_key_channel_blacklist" translatable="false">pref_key_channel_blacklist</string>
+    <string name="pref_title_channel_blacklist">Channel Blacklist</string>
+    <string name="pref_summary_channel_blacklist">A list of blocked channels.</string>
+    <string name="unblock">Unblock</string>
+    <string name="channel_blacklist_updated">Refresh videos to apply the new channel blacklist.</string>
+    <string name="channel_blacklist_update_failure">Could not remove the given channel(s) from the blacklist…</string>
+    <string name="channel_blacklist_empty">The blacklist is empty.</string>
+    <string name="pref_key_channel_whitelist" translatable="false">pref_key_channel_whitelist</string>
+    <string name="pref_title_channel_whitelist">Channel Whitelist</string>
+    <string name="pref_summary_channel_whitelist">A list of allowed channels.</string>
+    <string name="input_channel_url">Channel URLs to whitelist:</string>
+    <string name="add">Add</string>
+    <string name="block">Block</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="channel_already_whitelisted">Channel already whitelisted.</string>
+    <string name="channel_whitelist_updated">Refresh videos to use the new channel whitelist.</string>
+    <string name="channel_whitelist_update_failure">Could not whitelist the given channel.</string>
+    <string name="channel_unwhitelist_success">Refresh videos to use the new channel whitelist.</string>
+    <string name="channel_unwhitelist_failure">Failed to unwhitelist the given channel(s)…</string>
+    <string name="pref_languages_filter_category">Language and Region Filters</string>
+    <string name="pref_title_preferred_regions">Preferred Region</string>
+    <string name="pref_key_preferred_region" translatable="false">pref_key_preferred_region</string>
+    <string name="pref_summary_preferred_regions">Select what region to get \"Featured\" video from:  %s</string>
+    <string name="pref_title_preferred_languages">Preferred Language(s)</string>
+    <string name="pref_key_preferred_languages" translatable="false">pref_key_preferred_languages</string>
+    <string name="pref_summary_preferred_languages">Select your preferred languages.</string>
+    <string name="no_preferred_lang_selected">No preferred language selected.</string>
+    <string name="preferred_lang_updated">Refresh videos to use the new language.</string>
+    <string name="pref_title_lang_detection_video_filtering">Video-language Filter</string>
+    <string name="pref_key_lang_detection_video_filtering" translatable="false">pref_key_block_videos_lang_detection</string>
+    <string name="pref_summary_lang_detection_video_filtering">Use a lot of resources to detect video language and block non-preferred language(s).</string>
+    <string name="setting_updated">Refresh videos to use the new setting.</string>
+    <string name="pref_other_filters_category">Other Filters</string>
+    <string name="pref_title_low_views_filter">Views</string>
+    <string name="pref_key_low_views_filter" translatable="false">pref_key_low_views_filter</string>
+    <string name="pref_summary_low_views_filter">Filter out videos with low views: %s</string>
+    <string-array name="views_filtering_list">
+        <item>@string/disabled</item>
+        <item>&lt; 100 views</item>
+        <item>&lt; 500 views</item>
+        <item>&lt; 1,000 views</item>
+        <item>&lt; 5,000 views</item>
+        <item>&lt; 10,000 views</item>
+    </string-array>
+    <string name="views_filtering_disabled" translatable="false">-1</string>
+    <string-array name="views_filtering_values_list" translatable="false">
+        <item>@string/views_filtering_disabled</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+    <string name="pref_title_dislikes_filter">Dislikes</string>
+    <string name="pref_key_dislikes_filter" translatable="false">pref_key_low_likes_filter</string>
+    <string name="pref_summary_dislikes_filter">Filter out videos with high dislikes: %s</string>
+    <string-array name="dislikes_filtering_list">
+        <item>@string/disabled</item>
+        <item>&gt; 40% dislikes</item>
+        <item>&gt; 50% dislikes</item>
+        <item>&gt; 60% dislikes</item>
+        <item>&gt; 70% dislikes</item>
+        <item>&gt; 80% dislikes</item>
+        <item>&gt; 90% dislikes</item>
+        <item>&gt; 100% dislikes</item>
+    </string-array>
+    <string name="dislikes_filtering_disabled" translatable="false">@string/views_filtering_disabled</string>
+    <string-array name="dislikes_filtering_values_list" translatable="false">
+        <item>@string/dislikes_filtering_disabled</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+    <string name="pref_privacy_category">Privacy</string>
+    <string name="pref_key_disable_search_history" translatable="false">pref_disable_search_history</string>
+    <string name="pref_title_disable_search_history">No Search History</string>
+    <string name="pref_summary_disable_search_history">Clears and turns off search history.</string>
+    <string name="pref_disable_search_history_deleted">Search History deleted.</string>
+    <string name="pref_key_disable_playback_status" translatable="false">pref_disable_playback_status</string>
+    <string name="pref_title_disable_playback_status">No Playback Status</string>
+    <string name="pref_summary_disable_playback_status">Turns off playback status.</string>
+    <string name="pref_disable_playback_status_deleted">Playback Status deleted.</string>
+    <string name="pref_key_clear_playback_status" translatable="false">pref_key_clear_playback_status</string>
+    <string name="pref_title_clear_playback_status">Clear Playback Status</string>
+    <string name="pref_summary_clear_playback_status">Clear progression for all videos.</string>
+    <string name="pref_playback_status_cleared">Playback status cleared.</string>
+    <string-array name="pref_network_usage" translatable="false">
+        <item>LEAST_BANDWITH</item>
+        <item>BEST_QUALITY</item>
+    </string-array>
+    <string-array name="pref_network_usage_display">
+        <item>Least Bandwith</item>
+        <item>Best Quality</item>
+    </string-array>
+    <string name="pref_key_default_content_country" translatable="false">pref_key_default_content_country</string>
+    <string name="pref_title_default_content_country">Default content country</string>
+    <string name="pref_summary_default_content_country">Show content intended for this country: %s</string>
+
+    <!--
+        SPONSORBLOCK
+    -->
+    <string name="pref_sponsorblock_category">SponsorBlock</string>
+    <string name="pref_general">General</string>
+    <string name="pref_details">Details</string>
+    <string name="pref_title_enable_sponsorblock">Enable SponsorBlock</string>
+    <string name="pref_summary_enable_sponsorblock">Automatically skip video segments that are dedicated to sponsors, interaction reminders and many more</string>
+    <string name="pref_title_sponsorblock_category_list">Skip Segments</string>
+    <string name="pref_summary_sponsorblock_category_list">Choose which categories to skip</string>
+    <string name="pref_title_credit_sponsorblock">Credits</string>
+    <string name="pref_summary_credit_sponsorblock">Uses SponsorBlock data from https://sponsor.ajay.app</string>
+    <string-array name="sponsorblock_filtering_list" translatable="false">
+        <item>@string/sponsorblock_category_sponsor</item>
+        <item>@string/sponsorblock_category_selfpromo</item>
+        <item>@string/sponsorblock_category_interaction</item>
+        <item>@string/sponsorblock_category_music_offtopic</item>
+        <item>@string/sponsorblock_category_intro</item>
+        <item>@string/sponsorblock_category_outro</item>
+        <item>@string/sponsorblock_category_preview</item>
+        <item>@string/sponsorblock_category_filler</item>
+    </string-array>
+    <string-array name="sponsorblock_filtering_list_values" translatable="false">
+        <item>sponsor</item>
+        <item>selfpromo</item>
+        <item>interaction</item>
+        <item>music_offtopic</item>
+        <item>intro</item>
+        <item>outro</item>
+        <item>preview</item>
+        <item>filler</item>
+    </string-array>
+    <string-array name="sponsorblock_filtering_list_default_values" translatable="false">
+        <item>sponsor</item>
+        <item>selfpromo</item>
+        <item>interaction</item>
+        <item>music_offtopic</item>
+    </string-array>
+</resources>

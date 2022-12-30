@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<!-- TOOLBAR / ACTIONBAR -->
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/video_player_v2_hud"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<!-- CONTROL BUTTONS -->
+	<LinearLayout
+		android:id="@+id/exo_controls"
+		android:layout_width="wrap_content"
+		android:layout_height="0dp"
+		android:layout_marginBottom="0dp"
+		android:background="@color/video_player_v2_hud"
+		android:gravity="center_vertical|center_horizontal"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toTopOf="@+id/exo_timeline"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+		<!-- <ImageButton
+			android:id="@id/exo_prev"
+			style="@style/ExoMediaButton.Previous"/> -->
+
+		<ImageButton
+			android:id="@id/exo_rew"
+			style="@style/ExoMediaButton.Rewind"/>
+
+		<!-- <ImageButton android:id="@id/exo_shuffle"
+		             style="@style/ExoMediaButton.Shuffle"/>
+
+		<ImageButton android:id="@id/exo_repeat_toggle"
+		             style="@style/ExoMediaButton"/> -->
+
+		<ImageButton
+			android:id="@id/exo_play"
+			style="@style/ExoMediaButton.Play"/>
+
+		<ImageButton
+			android:id="@id/exo_pause"
+			style="@style/ExoMediaButton.Pause"/>
+
+		<ImageButton
+			android:id="@id/exo_ffwd"
+			style="@style/ExoMediaButton.FastForward"/>
+
+		<!-- <ImageButton
+			android:id="@id/exo_next"
+			style="@style/ExoMediaButton.Next"/> -->
+
+	</LinearLayout>
+
+
+	<!-- SEEK BAR -->
+	<LinearLayout
+		android:id="@+id/exo_timeline"
+		android:layout_width="match_parent"
+		android:layout_height="26dp"
+		android:background="@color/video_player_v2_hud"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toBottomOf="parent">
+
+		<TextView
+			android:id="@id/exo_position"
+			style="@style/VideoPlayerSeekBarTetView"
+			android:text="0:01"
+			android:layout_weight="1"/>
+
+		<LinearLayout
+			android:id="@+id/exo_timeline_inner"
+			android:layout_width="0dp"
+			android:layout_height="26dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:layout_weight="20">
+
+			<com.google.android.exoplayer2.ui.DefaultTimeBar
+				android:id="@id/exo_progress"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:played_color="@color/video_player_v2_seek_bar"/>
+
+			<free.rm.skytube.businessobjects.Sponsorblock.SBTimeBarView
+				android:id="@+id/exo_sponsorblock_progress"
+				android:layout_width="match_parent"
+				android:layout_height="4dp"
+				android:layout_marginTop="-15dp"
+				android:layout_marginStart="8dp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginEnd="8dp"
+				android:layout_marginRight="8dp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@id/exo_duration"
+			style="@style/VideoPlayerSeekBarTetView"
+			android:text="19:00"
+			android:layout_weight="1"/>
+
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
